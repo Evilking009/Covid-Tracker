@@ -62,12 +62,6 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country_iso }) => {
     />
   ) : null;
 
-  const loadingScreen = (
-    <div>
-      <h2>Loading...</h2>
-    </div>
-  );
-
   return (
     <div className={styles.container}>{country_iso ? barChart : lineChart}</div>
   );
